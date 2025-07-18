@@ -1,0 +1,9 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.hero {
+  background: url('../assets/cesped.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}

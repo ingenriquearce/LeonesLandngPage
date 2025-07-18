@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leones FC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script defer src="static/js/app.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-900 text-[#f7e9b7] py-6 text-center">
+    <h1 class="text-3xl font-bold">Leones FC - Escuela de Fútbol</h1>
+  </header>
+
+  <!-- Barra de subcategorías -->
+  <nav class="bg-white shadow px-4 py-2 flex overflow-x-auto space-x-4 border-b">
+    <button class="sub-btn text-green-900 font-semibold hover:underline" data-sub="6">Sub-6</button>
+    <button class="sub-btn text-green-900 font-semibold hover:underline" data-sub="7">Sub-7</button>
+    <button class="sub-btn text-green-900 font-semibold hover:underline" data-sub="8">Sub-8</button>
+    <button class="sub-btn text-green-900 font-semibold hover:underline" data-sub="9">Sub-9</button>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+    <!-- Fixture -->
+    <section id="fixture">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">Fixture</h2>
+      <div class="overflow-auto rounded shadow">
+        <table class="min-w-full table-auto bg-white">
+          <thead class="bg-gray-200 text-xs text-gray-600 uppercase">
+            <tr>
+              <th class="px-3 py-2">Fecha</th>
+              <th class="px-3 py-2">Hora</th>
+              <th class="px-3 py-2">Cancha</th>
+              <th class="px-3 py-2">Equipo 1</th>
+              <th class="px-3 py-2">Goles</th>
+              <th class="px-3 py-2">Goles</th>
+              <th class="px-3 py-2">Equipo 2</th>
+            </tr>
+          </thead>
+          <tbody id="fixture-body" class="text-sm divide-y">
+            <tr><td colspan="7" class="text-center py-4 text-gray-400">Seleccione una subcategoría</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Posiciones -->
+    <section id="posiciones">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">Tabla de Posiciones</h2>
+      <div class="overflow-auto rounded shadow">
+        <table class="min-w-full table-auto bg-white">
+          <thead class="bg-gray-200 text-xs text-gray-600 uppercase">
+            <tr>
+              <th class="px-3 py-2">Equipo</th>
+              <th class="px-3 py-2">PJ</th>
+              <th class="px-3 py-2">PG</th>
+              <th class="px-3 py-2">PE</th>
+              <th class="px-3 py-2">PP</th>
+              <th class="px-3 py-2">GF</th>
+              <th class="px-3 py-2">GC</th>
+              <th class="px-3 py-2">Pts</th>
+            </tr>
+          </thead>
+          <tbody id="posiciones-body" class="text-sm divide-y">
+            <tr><td colspan="8" class="text-center py-4 text-gray-400">Seleccione una subcategoría</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Goleadores -->
+    <section id="goleadores">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">Goleadores</h2>
+      <div class="overflow-auto rounded shadow">
+        <table class="min-w-full table-auto bg-white">
+          <thead class="bg-gray-200 text-xs text-gray-600 uppercase">
+            <tr>
+              <th class="px-3 py-2">Jugador</th>
+              <th class="px-3 py-2">Equipo</th>
+              <th class="px-3 py-2">Goles</th>
+            </tr>
+          </thead>
+          <tbody id="goleadores-body" class="text-sm divide-y">
+            <tr><td colspan="3" class="text-center py-4 text-gray-400">Seleccione una subcategoría</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
