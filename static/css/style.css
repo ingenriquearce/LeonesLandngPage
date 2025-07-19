@@ -2,8 +2,37 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 .hero {
   background: url('../assets/cesped.jpeg') no-repeat center center;
   background-size: cover;
   height: 100vh;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f7e9b7;
+}
+
+header img.logo {
+  height: 50px;
+}
+
+nav button {
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+nav button:hover {
+  color: #bfa657;
+}
+nav button.active {
+  background-color: #f7e9b7;
+  color: #1a202c;
+  font-weight: 700;
 }
