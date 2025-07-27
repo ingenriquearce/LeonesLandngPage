@@ -36,3 +36,22 @@ nav button.active {
   color: #1a202c;
   font-weight: 700;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/combinada.png') center center no-repeat;
+  background-size: 60%;
+  opacity: 0.05; /* Ajustá esto si querés más o menos visibilidad */
+  z-index: 0;
+  pointer-events: none;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
