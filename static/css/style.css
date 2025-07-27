@@ -1,12 +1,21 @@
 
-body {
-  font-family: 'Poppins', sans-serif;
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/combinada.png') center center no-repeat;
+  background-size: 60%;
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.hero {
-  background: url('../assets/cesped.jpeg') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
+main {
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
@@ -35,23 +44,4 @@ nav button.active {
   background-color: #f7e9b7;
   color: #1a202c;
   font-weight: 700;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../assets/combinada.png') center center no-repeat;
-  background-size: 60%;
-  opacity: 0.05; /* Ajustá esto si querés más o menos visibilidad */
-  z-index: 0;
-  pointer-events: none;
-}
-
-body {
-  position: relative;
-  z-index: 1;
 }
