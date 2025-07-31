@@ -45,3 +45,20 @@ nav button.active {
   color: #1a202c;
   font-weight: 700;
 }
+
+
+.categoria-btn.active {
+  background-color: #f7e9b7;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.categoria-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.categoria-btn:hover {
+  color: #bfa657;
+}
